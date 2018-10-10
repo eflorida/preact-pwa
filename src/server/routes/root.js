@@ -17,8 +17,9 @@ const AppShell = ({ html, state }) => `<!DOCTYPE html>
 <html lang="en-US">
   <head>
     <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/sw.js'); }</script>
-    <title>Preact PWA</title>
+    <title>Preact App</title>
     <meta charset="utf-8">
+    <meta name="description" content="A super fast progressive web app with a small footprint & minimal dependencies">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#673ab8">

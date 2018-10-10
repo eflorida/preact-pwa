@@ -1,12 +1,11 @@
-# [preact-pwa](https://preact-pwa-yfxiijbzit.now.sh/)
+# Preact Boilerplate - PWA, SSR
 
 A `Super fast progressive web app` with a small footprint & minimal dependencies.  
 
 Features universal rendering, redux, state-driven routing, preact, & service workers.  Crunched & optimized with rollup, buble, optimize-js, & purify-css.
 
-Live version (zeit): [https://preact-pwa-yfxiijbzit.now.sh/](https://preact-pwa-yfxiijbzit.now.sh/)
-
 ## bundle sizes & performance
+(These stats have not been updated since forking)
 ```
 Bundle Size:            28.63 KB, 9.64 KB Gzipped
 Webpage test:           A, A, A
@@ -18,37 +17,39 @@ lighthouse:             100
 
 ### Prerequisites
 
-Make sure that [Node v7](https://nodejs.org/en/download/releases/) is installed.
-
-Make sure that [yarn](https://github.com/yarnpkg/yarn) is installed.
+Make sure that [Node v8](https://nodejs.org/en/download/releases/) is installed.
 
 ### Instructions
 
 First, clone the repo
 
 ```bash
-$ git clone https://github.com/ezekielchentnik/preact-pwa
+$ git clone https://github.com/eflorida/preact-pwa.git
 ```
 
 Then, install all dependencies:
 
 ```bash
-$ yarn
+$ npm install
 ```
 
 Finally, to run the project for development:
 
 ```bash
-$ yarn dev
+$ npm run dev
 ```
 
 Or, to run the project for production:
 
 ```bash
-$ yarn start
+$ npm start
 ```
 
-## performance insights (note: incomplete)
+## Performance insights (note: incomplete)
+
+### Lighthouse results
+
+HTTP2 and HTTPS support are required for perfect scores, but typically not available on local server.
 
 ### manifest.json
 
@@ -73,6 +74,14 @@ Using 192x192 for minimum sized icon, omitting other sizes to reduce downloads f
 - Async actions handled with [redux-thunk](https://github.com/gaearon/redux-thunk), [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch), and [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 - Node server is built with [express](http://expressjs.com/).
 - Linting is handled with [Standard](http://standardjs.com/).
+
+### Acknowledgement
+
+Forked from the work started by [Ezekiel Chentnik](https://github.com/ezekielchentnik/preact-pwa)
+
+Original demo (zeit): [https://preact-pwa-yfxiijbzit.now.sh/](https://preact-pwa-yfxiijbzit.now.sh/)
+
+---
 
 License
 
